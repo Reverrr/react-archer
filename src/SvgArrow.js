@@ -207,7 +207,7 @@ const SvgArrow = ({
   );
   const { xAnchor2, yAnchor2 } = endingPosition;
 
-  const pathString = computePathString({
+  let pathString = computePathString({
     xStart,
     yStart,
     xAnchor1,
@@ -226,6 +226,11 @@ const SvgArrow = ({
     xEnd,
     yEnd,
   );
+
+  if (pathString.split(',')[pathString.split(',').length - 1] == 0) {
+    pathString = null;
+  }
+
 
   return (
     <g>

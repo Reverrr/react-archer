@@ -46,10 +46,6 @@ const FirstExample = () => {
             <div style={boxStyle}>Element 2</div>
           </ArcherElement>
 
-          <ArcherElement id="element3">
-            <div style={boxStyle}>Element 3</div>
-          </ArcherElement>
-
           <ArcherElement
             id="element4"
             relations={[
